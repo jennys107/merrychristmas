@@ -1,0 +1,34 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #000000;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#canvas-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#active-wish-display {
+    margin-top: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #F6D28B; /* Gold color */
+    text-shadow: 0 0 10px rgba(246, 210, 139, 0.5);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    max-width: 600px;
+}
+
+#active-wish-display.show {
+    opacity: 1;
+}
